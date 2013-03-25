@@ -1,0 +1,3 @@
+My Capstone is a single page web application that allows a user to enter in information about their open source projects and is marketed toward startup ideas that are just getting off the ground and need more exposure. Such information as the project title, a short description of how to contribute, what language the application is written in, an email address for further contact and a url link to Github.com are all provided and stored within the app. 
+
+Information entered into the app is sortable by alphabet and filterable by programming language for ease of use and navigation. No plug-ins were used for sorting or filtering.
