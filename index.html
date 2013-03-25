@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="Nashville Software School">
+<meta name="author" content="Shearry Malone">
+
+<!-- js files -->
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="backlift-reloader.js"></script>
+
+	<!-- css files -->
+<link href="styles.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+
+
+   <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+        background-color: #F0FFFF;
+        height: 960px;
+      }
+
+        #page{
+        background-color: #D3D3D3;
+      }
+
+      .container-low {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+
+      .container-low > hr {
+        margin: 60px 0;
+      }
+
+        .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+
+      .jumbotron h2 {
+        font-size: 100px;
+        line-height: 1;
+        font-family: "Special Elite";
+
+      }
+
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-right: 40px;
+        padding-left: 50px;
+      }
+
+      #Project, #Description, #Language, #Email, #Url{
+        width: 350px;
+      }
+
+      #image{
+        margin-left: 450px;
+        margin-top: -293px;
+        width: 500px;
+        border: 1px solid;
+        border-radius: 2px;
+      }
+
+      #image h2{
+        position: absolute;
+        color: white;
+        padding-left: 60px;
+        margin-top: -290px;
+        font-size: 50px;
+        font-family: "Special Elite";
+      }
+
+      #image h3{
+        position: absolute;
+        padding-left: 250px;
+        margin-top: -250px;
+        color: white;
+        font-size: 46px;
+        font-family: "Special Elite";
+      }
+
+      span{
+        position: absolute;
+        color: white;
+        font-family: "Special Elite";
+        font-size: 22px;
+        margin-left: -130px;
+      }
+
+      .userInput{
+        margin-left: 25px;
+      }
+
+      .footer{
+      background-color: gray;
+      color: white;
+      height: 100px;
+
+      }
+      
+
+   </style>
+
+</head>
+
+<body>
+
+  <!-- =================================== Navigation ===================================== -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+        <div class="container">
+        <ul class="nav" role="navigation">
+        <a class="brand" href="#">uberkickstart.</a>
+        <li class="dropdown">
+        <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Pick a Language<b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+        <li id="javaList" role="presentation"><a role="menuitem" tabindex="-1" href="#">Java</a></li>
+        <li id="rubyList"role="presentation"><a role="menuitem" tabindex="-1" href="#">Ruby</a></li>
+        <li id="Clist"role="presentation"><a role="menuitem" tabindex="-1" href="#">C#</a></li>
+        <li id="javascriptList"role="presentation"><a role="menuitem" tabindex="-1" href="#">Javascript</a></li>
+        <li id="phpList"role="presentation"><a role="menuitem" tabindex="-1" href="#">PHP</a></li>
+        <li id="pythonList"role="presentation"><a role="menuitem" tabindex="-1" href="#">Python</a></li>
+        <li id="vbList"role="presentation"><a role="menuitem" tabindex="-1" href="#">Visual Basic</a></li>
+        <li id="cPlusList"role="presentation"><a role="menuitem" tabindex="-1" href="#">C++</a></li>
+        <li id="perlList"role="presentation"><a role="menuitem" tabindex="-1" href="#">Perl</a></li>
+        <li id="haskellList"role="presentation"><a role="menuitem" tabindex="-1" href="#">Haskell</a></li>
+        </ul>
+        </li>
+        </div>
+        </div>
+        </div>
+
+        <div id="page">
+        <div class="container">
+
+<!-- ===================================== Header ========================================= -->
+        
+        <div class="jumbotron">
+        <h2>have an open source project that needs some love and attention?</h2>
+        <p class="lead">uberkickstart is <em><b>just</em></b> the place for it to call home. it's easy to add your latest open source project. <br> fill out the simple form below. hit submit and you're done! now your project is ready to be discovered and given the kickstart it needs.</p>
+        </div>
+        </div> <!-- /container -->
+        </div> <!-- /page -->
+
+        <hr>
+
+        <div id="wrapper">
+        <div class="container-low">
+<!-- =================================== Form Input =================================== -->
+
+
+    <div class="row-fluid">
+    <div class="span4">
+    <form class="userInput">
+            <div class="control-group">
+              <label class="control-label" for="inputProject"></label>
+              <div class="controls1">
+                <input type="text" id="Project" placeholder="Project Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputDescription"></label>
+              <div class="controls">
+                <input type="text" id="Description" placeholder="Description">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputLanguage"></label>
+              <div class="controls">
+                <input type="text" id="Language" placeholder="Language">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputEmail"></label>
+              <div class="controls">
+                <input type="text" id="Email" placeholder="Email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputUrl"></label>
+              <div class="controls">
+                <input type="text" id="Url" placeholder="http://github.com/username">
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                  <button type="click" class="btn">Add a Project</button>
+              </div>
+            </div>
+            <div id="image">
+              <img border="0" src="img/Boston City Flow.jpg" alt="Pulpit rock">
+              <h2>uberkickstart.<br></h2>
+              <h3><span>your idea</span>today.</h3>
+            </div>
+          </form>
+
+<!-- ============================= Table Input =================================== -->
+
+       <div class="row-fluid">
+       <div class="span8 pull-right">
+       <div id="users">
+            <table class="table table-striped tabled-bordered">
+              <thead>
+                <tr>
+                  <th id="project-name-header">Project Name</th>
+                  <th>Description</th>
+                  <th>Language</th>
+                  <th>Email</th>
+                  <th>Url</th>
+                </tr>
+              </thead>
+              <tbody id="project-table-body">
+                <tr>
+                  <td>cucumber</td>
+                  <td>tracking system</td>
+                  <td>Ruby</td>
+                  <td>whatever@whatever.com</td>
+                  <td>http://github.com/username</td>
+                </tr>
+              </tbody>
+            </table>
+    </div> 
+  </div>
+</div>
+</div>
+</div>
+
+      <hr>
+
+<!-- ==================================== Footer ======================================= -->
+
+      
+      </div> <!-- end container-low -->
+
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+
+      </div> <!-- end wrapper --> 
+
+      </body>
+      </html>
+
+      <script type="text/javascript">
+      $(document).ready(function(){
+
+
+      $(".btn").click(function() {
+        $("#project-table-body").append("<tr><td>" + $("#Project").val() + "</td><td>" + $("#Description").val() + "</td><td>" + $("#Language").val() + "</td><td>" + $("#Email").val() + "</td><td>" + $("#Url").val() + "</td></tr>");
+
+        return false;
+      });
+
+      $("#project-name-header").click(function() { // sort table in ascending order
+        var $sort = this;
+        var $table = $('#users');
+        var $rows = $('tbody > tr',$table);
+        $rows.sort(function(a, b){
+            var keyA = $($('td',a)[0]).text();
+            var keyB = $($('td',b)[0]).text();
+            if (keyA == keyB) return 0;
+            if (keyA > keyB) return -1;
+            if (keyA < keyB) return 1;
+        });
+        $.each($rows, function(index, row){
+          $("#project-table-body").append(row);
+        });
+      });
+
+
+    $("#javaList").click(function() { //on click, find every element with the id javaList
+      var $sort = this; //create jQuery variable '$sort' this calls the jquery sort function on the element with id javaList 
+      var $table = $('#users'); //create jQuery variable '$table' set it equal to the table id '#users'
+      var $rows = $('tbody > tr',$table); //create jQuery variable '$rows', find the child element of the table body within the jQuery variable '$table'
+      $.each($rows, function(index, row){ //loop through each row, assign it an index value within the row
+        var language = $($('td',row)[2]).text(); //go into this row, find the table data within row 3 and find it's text
+        if(language === "Java" || language === "java"){ //if table data is equal to "Java" or "java"
+            $(row).show(); //show that row(s)
+        } else {
+            $(row).hide(); //hide that row(s)
+        }
+      });
+      return false;
+    });
+
+    $("#rubyList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "Ruby" || language === "ruby"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+    $("#Clist").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "C#" || language === "c#"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+    $("#javascriptList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "Javascript" || language === "javascript"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+    $("#phpList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "PHP" || language === "php"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+    $("#pythonList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "Python" || language === "python"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+    $("#vbList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "Visual Basic" || language === "visual basic"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+     $("#cPlusList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "C++" || language === "c++"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+      $("#perlList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "Perl" || language === "perl"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+      $("#haskellList").click(function() {
+      var $sort = this;
+      var $table = $('#users');
+      var $rows = $('tbody > tr',$table);
+      $.each($rows, function(index, row){
+        var language = $($('td',row)[2]).text();
+        if(language === "Haskell" || language === "haskell"){
+            $(row).show();
+        } else {
+            $(row).hide();
+        }
+      });
+      return false;
+    });
+
+
+// ======================== sort by number of items displayed on page ==========================
+
+
+   // populate all projects on page load
+//   $.ajax({
+//     type: "GET",
+//     dataType: "JSON",
+//     url: "/backliftapp/project",
+//     result: {
+//         name: $("#Project").val(),
+//         description: $("#Description").val(),
+//         email: $("#Email").val(),
+//         url: $("#Url").val()
+//     },
+//     success: function(result) { 
+//       for (var i=0; i<result.length; i++) {
+//             $("#users tbody").append("<tr><td>"+ result[i].name +"</td><td>"+ result[i].description +"</td><td>"+ result[i].email +"</td><td>"+ result[i].url +"</td></tr>")
+//             console.log(results);
+//       } 
+// }
+
+//add new projects to the list
+//   $.ajax({
+//     type: "GET",
+//     dataType: "JSON",
+//     url: "/backliftapp/project",
+//     success: function(result) {
+//         for (var i=0; i<result.length; i++) {
+//             $("#users tbody").append("<tr><td>"+ result[i].name +"</td><td>"+ result[i].description +"</td><td>"+ result[i].email +"</td><td>"+ result[i].url +"</td></tr>")
+//         }
+//     }
+// });
+
+   //$('.btn').submit(function() {
+
+//save updated project
+//   $.ajax({
+//     type: "POST",
+//     url: "/backliftapp/project",
+//     dataType: "JSON",
+//     result: {
+//         name: $("#Project").val(),
+//         description: $("#Description").val(),
+//         email: $("#Email").val(),
+//         url: $("#Url").val()
+//     },
+//     success: function(result) { 
+//         for (var i=0; i<result.length; i++) {
+//             $("#users tbody").append("<tr><td>"+ result[i].name +"</td><td>"+ result[i].description +"</td><td>"+ result[i].email +"</td><td>"+ result[i].url +"</td></tr>")
+//     } 
+// });
+
+//save uodated project and add to the list
+//   $.ajax({
+//     type: "POST",
+//     url: "/backliftapp/project",
+//     dataType: "JSON",
+//     result: {
+//         name: $("#Project").val(),
+//         description: $("#Description").val(),
+//         email: $("#Email").val(),
+//         url: $("#Url").val()
+//     },
+//     success: function(result) {
+//         $("#users tbody").append("<tr><td>"+ result.name +"</td><td>"+ result.description +"</td><td>"+ result.email +"</td><td>"+ result.url +"</td></tr>")
+//     }
+// });
+
+//}); //end submit
+
+
+
+}); //end doc ready
+  //return false;
+</script>  
+  
